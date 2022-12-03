@@ -1,0 +1,213 @@
+.backdrop {
+    width: 100%;
+    height: 100%;
+    background-color: var(--backdrop-background);
+    position: fixed;
+    top: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+    width: 528px;
+    min-height: 581px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 4px;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 40px;
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.modal-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 30px;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+            border-color: var(--accent-text-color);
+        }
+
+                &:focus+.input-icon {
+                    fill: var(--accent-text-color);
+                }
+}
+
+
+
+.input-element {
+    margin-bottom: 10px;
+}
+
+.input-wrap {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--color-contact);
+}
+
+.input-label span {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.modal-comment {
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    resize: none;
+    outline: none;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+        &:focus {
+            border: 1px solid var(--accent-text-color);
+        }
+
+                &::placeholder {
+                    font-size: 12px;
+                    line-height: 1.17;
+                    letter-spacing: 0.01em;
+                    color: var(--placeholder-color-text);
+                }
+}
+
+
+
+
+.checkbox-link {
+    color: var(--accent-text-color);
+}
+
+.check-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--color-contact);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.check-text span {
+    content: '';
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--primary-text-color);
+    border-radius: 3px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+
+    .input-check:checked+& {
+            background-color: var(--accent-text-color);
+            border: transparent;
+            fill: var(--primary-color);
+        }
+}
+
+.check-wrap {
+    margin-top: 20px;
+}
+
+
+
+.modal-send {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--primary-color);
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--accent-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+        &:focus {
+            background-color: var(--background-hero-btn);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
+}
+
+
+
+.modal-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.modal-close {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+        &:focus {
+            fill: var(--accent-text-color);
+            border: 1px solid var(--accent-text-color);
+        }
+}
+
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
