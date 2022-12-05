@@ -3,7 +3,18 @@
     font-size: 14px;
     line-height: 1.14;
     display: none;
-    gap: 50px;
+    flex-direction: column;
+    // gap: 50px;
+    gap: 10px;
+    
+    @media screen and (min-width: 768px){
+        display: flex;
+    }
+    @media screen and (min-width: 1200px){
+        gap: 26px;
+        flex-direction: row;
+        padding-right: 220px;
+    }
 }
 
 .contact__element {
@@ -21,8 +32,6 @@
 
 .contact__link {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .contact__icon {

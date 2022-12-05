@@ -6,6 +6,10 @@
 .navigation__list {
     display: none;
     gap: 50px;
+    @media screen and (min-width: 768px){
+        display: flex;
+        margin-left: 87px;
+    }
 }
 
 .navigation__element {
@@ -35,14 +39,20 @@
     height: 4px;
     background: var(--accent-text-color);
     border-radius: 2px;
-    bottom: -32px;
+    bottom: -23px;
     left: 0;
+    @media screen and (min-width: 1200px){
+        bottom: -30px;
+    }
 }
 
 .menu-open{
     margin-left: auto;
     border: none;
     background-color: var(--primary-color);
+    @media screen and (min-width: 768px){
+        display: none;
+    }
 }
 
 .mob-menu{
@@ -122,10 +132,6 @@
     display: flex;
 }
 
-.mob-soc_element{
-
-}
-
 .mob-soc_link {
     font-weight: 500;
     font-size: 18px;
@@ -135,7 +141,4 @@
     padding-right: 10px;
     padding-left: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
-}
-
-.mob-container {
 }
