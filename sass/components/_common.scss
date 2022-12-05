@@ -31,3 +31,9 @@
     margin-bottom: 50px;
     text-align: center;
 }
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
