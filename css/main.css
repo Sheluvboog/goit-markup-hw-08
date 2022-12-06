@@ -68,7 +68,7 @@
 }
 @media screen and (min-width: 1200px) {
   .current::after {
-    bottom: -30px;
+    bottom: -32px;
   }
 }
 
@@ -1094,6 +1094,7 @@ img {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 320px) {
   .container {
@@ -1113,7 +1114,6 @@ img {
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    margin: 0 auto;
   }
 }
 
