@@ -39,7 +39,7 @@
     height: 4px;
     background: var(--accent-text-color);
     border-radius: 2px;
-    bottom: -23px;
+    bottom: -35px;
     left: 0;
     @media screen and (min-width: 1200px){
         bottom: -30px;
@@ -47,9 +47,8 @@
 }
 
 .menu-open{
-    margin-left: auto;
     border: none;
-    background-color: var(--primary-color);
+        background-color: var(--primary-color);
     @media screen and (min-width: 768px){
         display: none;
     }
