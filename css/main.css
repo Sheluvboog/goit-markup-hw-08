@@ -1,11 +1,13 @@
 .header {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  height: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid var(--header-border);
   background-color: var(--primary-color);
 }
 @media screen and (min-width: 768px) {
   .header {
+    height: 80px;
     padding-top: 21px;
     padding-bottom: 21px;
   }
@@ -85,6 +87,7 @@
   height: 100vh;
   background-color: var(--primary-color);
   top: 0;
+  left: 0;
   position: fixed;
   z-index: 1;
   padding: 10px 15px;
@@ -240,7 +243,7 @@
 }
 @media screen and (min-width: 768px) {
   .hero-section {
-    padding: 204px;
+    padding: 118px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg_hero-tab.jpg);
   }
 }
@@ -325,9 +328,13 @@
   margin-bottom: 30px;
 }
 
-.benefits {
-  padding-bottom: 0;
-  padding-top: 92px;
+.benefits.section {
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .benefits.section {
+    padding-bottom: 0;
+  }
 }
 
 .benefits__list {
@@ -761,7 +768,6 @@
 }
 
 .footer-form {
-  width: 570px;
   display: flex;
   gap: 12px;
   align-items: flex-end;
@@ -778,6 +784,7 @@
     margin-left: 93px;
     justify-content: center;
     text-align: left;
+    flex-direction: row;
   }
 }
 
@@ -1131,20 +1138,18 @@ img {
 
 .title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   color: var(--primary-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
 }
-
-.title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  color: var(--primary-text-color);
-  margin-bottom: 50px;
-  text-align: center;
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 32px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 .is-hidden {

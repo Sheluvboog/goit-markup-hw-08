@@ -16,20 +16,16 @@
 }
 .title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.17;
     color: var(--primary-text-color);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
-}
-
-.title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    color: var(--primary-text-color);
-    margin-bottom: 50px;
-    text-align: center;
+    @media screen and (min-width: 1200px){
+        font-size: 32px;
+        line-height: 1.16;
+        margin-bottom: 50px;
+    }
 }
 
 .is-hidden {

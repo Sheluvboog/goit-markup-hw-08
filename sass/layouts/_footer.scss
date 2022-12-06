@@ -131,7 +131,6 @@
 }
 
 .footer-form {
-    width: 570px;
     display: flex;
     gap: 12px;
     align-items: flex-end;
@@ -147,6 +146,7 @@
         margin-left: 93px;
         justify-content: center;
         text-align: left;
+        flex-direction: row;
     }
 }
 

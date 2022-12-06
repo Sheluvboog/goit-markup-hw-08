@@ -1,9 +1,11 @@
 .header {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-bottom: 1px solid var(--header-border);
     background-color: var(--primary-color);
     @media screen and (min-width: 768px) {
+            height: 80px;
             padding-top: 21px;
             padding-bottom: 21px;
         }
